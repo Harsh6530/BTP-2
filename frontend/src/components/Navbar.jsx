@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Menu, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
-import './navbar.css';
+import './Navbar.css';
 
 export default function Navbar({ user, onLogout }) {
   return (
