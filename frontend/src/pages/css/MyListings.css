@@ -1,0 +1,165 @@
+.mylistings-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2.5rem 1rem;
+  font-family: 'Inter', sans-serif;
+  border-radius: 1.25rem;
+  background: rgb(177, 227, 247);
+  background-size: 400% 400%;
+}
+
+@keyframes shiftBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.mylistings-title {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  background: linear-gradient(to right, #0ea5e9, #6366f1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+}
+
+.mylistings-loader,
+.mylistings-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  font-size: 1.1rem;
+  color: #475569;
+  text-align: center;
+}
+
+.mylistings-error {
+  color: #ef4444;
+}
+
+.mylistings-empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #64748b;
+}
+
+.mylistings-empty h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.mylistings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.8rem;
+}
+
+/* ✨ Frosted Glass Card */
+.mylistings-container .gadget-card {
+  background: rgba(255, 222, 32, 0.2);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.mylistings-container .gadget-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.1);
+}
+
+.mylistings-container .gadget-image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.mylistings-container .gadget-details {
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: -0.5rem;
+}
+
+.mylistings-container .gadget-details h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-top: 0.5rem;
+}
+
+.mylistings-container .gadget-details .category {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-top: -0.5rem;
+}
+
+.mylistings-container .gadget-details .price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #16a34a;
+  margin-top: 0.25rem;
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem;
+}
+
+/* Actions */
+.mylistings-container .gadget-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.75rem;
+  margin-bottom: -0.5rem;
+}
+
+.mylistings-container .view-link {
+  font-size: 0.9rem;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.mylistings-container .view-link:hover {
+  text-decoration: underline;
+}
+
+.mylistings-container .delete-button {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.mylistings-container .delete-button:hover {
+  text-decoration: underline;
+}
+
+/* Button for redirect */
+.mylistings-container .login-redirect-button {
+  margin-top: 1.5rem;
+  padding: 0.65rem 1.5rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.mylistings-container .login-redirect-button:hover {
+  background: #1e40af;
+}

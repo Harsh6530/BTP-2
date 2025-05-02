@@ -1,0 +1,8 @@
+/* Custom CSS for Gadget Marketplace - Tailwind removed */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: #f6f8fa;
+  color: #222;
+}

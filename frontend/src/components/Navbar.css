@@ -1,0 +1,149 @@
+.navbar {
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+  background: linear-gradient(to right, #6366f1, #06b6d4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-center {
+  flex: 2;
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Nav Links */
+.navbar-center a,
+.navbar-links a {
+  position: relative;
+  font-size: 1rem;
+  color: #cbd5e1;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-center a:hover,
+.navbar-links a:hover {
+  color: #ffffff;
+}
+
+/* Active Link */
+.navbar-center a.active,
+.navbar-links a.active {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.navbar-center a.active::after,
+.navbar-links a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, #3b82f6, #06b6d4);
+  border-radius: 2px;
+}
+
+/* Logout Button */
+.logout-button {
+  padding: 0.45rem 1rem;
+  background: #ef4444;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #dc2626;
+}
+
+/* Mobile Styles */
+.mobile-menu-button {
+  background: transparent;
+  border: none;
+  color: #e2e8f0;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  position: absolute;
+  right: 1rem;
+  top: 64px;
+  width: 220px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu a,
+.mobile-menu button {
+  display: block;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  text-align: left;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  color: #cbd5e1;
+  transition: background 0.15s ease;
+}
+
+.mobile-menu a:hover,
+.mobile-menu button:hover {
+  background-color: #334155;
+  color: #38bdf8;
+}
+
+.mobile-menu a.active {
+  background-color: #1e40af;
+  color: #ffffff;
+  font-weight: 600;
+}
